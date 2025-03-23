@@ -1,0 +1,10 @@
+h1 .cnd {
+  position: absolute; 
+  top: 7px; 
+  left: 128px; 
+  font-family: Aboreto; /* Heading */
+  font-size: 64px; 
+  line-height: 84px; 
+  font-weight: 400; 
+  color: #171A1FFF; /* neutral-900 */
+}
