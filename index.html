@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Group Number" content="3">
+        <meta name="Date-Presented" content="4/8/2025">
+        <meta name="Alternative Assessment 1" content="Milestone 1">
+        <meta name="description" content="Cesium N' Dragons - A fantasy web RPG adventure!">
+        <title>Cesium N' Dragons</title>
+        <link rel="icon" href="Images/logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="style'.css">
+    </head>
+    <body>
+        <header>
+            <h1>
+               Cesium N' Dragons
+            </h1>
+                <img src="Images/logo.png" class="logo" alt="Cesium 'N Dragons">
+        </header>
+        <section>
+            <h2 id="username">HAIL, TRAVELER! SPEAK THY NAME, THAT WE MAY KNOW THEE!</h2>
+            <form onsubmit="return false;">
+                <input type="text" id="textbox" placeholder="Your calling..." pattern="[A-Za-z0-9]+" title="Only letters and numbers are allowed.">
+                <button type="button" onclick="getUsername()" id="submit-name">MAY IT BE REMEMBERED</button>
+            </form>
+        </section>
+        <section>
+            <img src="Images/varzhul.png" alt="Varzhul, The Cesium King" class="bossdisplay1">
+        </section>
+        <a class="game-direct" href ="game.html">THOU SHALT PRESS THIS TO START THY ADVENTURE</a>
+        <section class="story">
+                <h3 class="story">Eclipse of the Hollowed King</h3>
+                <p class="story">
+                In an age long past, the world was ruled by the great kingdoms of man, beast, and magic. 
+                Now, their remnants lie scattered across the land, swallowed by the sands of time and the 
+                creeping grasp of corruption. Yet, a new shadow looms over the realms, for the Hollowed 
+                King, long thought to be a myth, has stirred once more. His cursed kingdom rises from the 
+                abyss, and with it, the echoes of a forgotten war.
+                </p>
+        </section>
+        <section class="roles">
+            <div>
+                <h2 class="roles">ROLES OF THE BRAVE</h2>
+                <p class="roles">The fate of the world lies in the hands of those who dare to challenge the Hollowed King. 
+                Choose your role wisely, for each has a part to play in the battle against darkness.</p>
+            </div>
+            <div>
+                <img src="Images/knight.png" class="img1" alt="Knight">
+                <img src="Images/archer.png" class="img2" alt="Archer">
+                <img src="Images/mage.png" class="img3" alt="Mage">
+                <img src="Images/bard.png" class="img4" alt="Bard">
+            </div>
+        </section>
+        <section class="gameway">
+            <div>
+                <h3 class="play">The Way of Hostility</h3>
+                <p class="play">In the dark lands of Cesiara, those who dare enter the Hollowed King's realm 
+                    must face powerful beasts in battle. When the fight begins, the warrior may choose to strike, 
+                    heal, or flee. Each strike is guided by chance — sometimes strong, sometimes weak. Healing is 
+                    not always certain, but it may save thy life. Should thee choose to run, the battle shall start 
+                    again, as if it never happened. Some bosses are not only strong, but clever too — they can heal 
+                    themselves in the middle of the fight. Only the brave, and a bit of luck, can win the day.</p>
+            </div>
+        </section>
+        <div class ="forcer"></div>
+        <footer class="rights">
+            <p>&copy; 2025 Cesium N' Dragons. All Rights Reserved.</p>
+        </footer>
+        <script src="JS/homepage.js"></script>
+    </body>
+</html>
