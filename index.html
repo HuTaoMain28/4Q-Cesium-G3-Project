@@ -8,7 +8,7 @@
         <meta name="description" content="Cesium N' Dragons - A fantasy web RPG adventure!">
         <title>Cesium N' Dragons</title>
         <link rel="icon" href="Images/logo.png" type="image/x-icon">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style'.css">
     </head>
     <body>
         <header>
@@ -23,26 +23,6 @@
                 <input type="text" id="textbox" placeholder="Your calling..." pattern="[A-Za-z0-9]+" title="Only letters and numbers are allowed.">
                 <button type="button" onclick="getUsername()" id="submit-name">MAY IT BE REMEMBERED</button>
             </form>
-            <script>
-                function greetUser() {
-                    let Player = localStorage.getItem("username");
-                    if (Player) {
-                        document.getElementById("username").innerHTML = "GREETINGS " + Player + "!!! " + "WELCOME BACK TO CESIARA!";
-                    }
-                }
-                function getUsername(){
-                    let Nameusername = "username";
-                    let ValueUsername = document.getElementById("textbox").value;
-                    if (/^[A-Za-z0-9]+$/.test(ValueUsername)) {
-                        localStorage.setItem(Nameusername, ValueUsername);
-                        let Player = localStorage.getItem(Nameusername);
-                        document.getElementById("username").innerHTML = "GREETINGS " + Player + "!!! " + "WELCOME TO CESIARA!";
-                    } else {
-                        alert("Please enter a valid username (only letters and numbers).");
-                    }
-                }
-                window.onload = greetUser;
-            </script>
         </section>
         <section>
             <img src="Images/varzhul.png" alt="Varzhul, The Cesium King" class="bossdisplay1">
@@ -86,5 +66,6 @@
         <footer class="rights">
             <p>&copy; 2025 Cesium N' Dragons. All Rights Reserved.</p>
         </footer>
+        <script src="JS/homepage.js"></script>
     </body>
 </html>
