@@ -1,34 +1,17 @@
 var Boss[5] = [Solmara, Litharos, Pyrrhok, Noctivoros, Mirexa, Varzhul];
 var playerHealth = 20;
+var HPSol = 25,HPLith = 30,HPPyr = 35,HPNoc = 40,HPMir = 45,HPVar = 50;
 var playerfightRNG = (Math.random() * 10 );
 var playerhealRNG = (Math.random() * 5 );
 var bossfightRNG = (Math.random() * 3 );
 var bosshealRNG = (Math.random() * 10 );
-for (int i=0;i>=5;i++){
-  Boss[i]=
-}
+var currentBoss;
+
 
 function fight(){
-    
+    playerfightRNG-
 }
 function heal(){
 
 }
-function solmaraMechanics(){
-  
-}
-function litharosMechanics(){
 
-}
-function pyrrhokMechanics(){
-    
-}
-function noctivorosMechanics(){
-
-}
-function mirexaMechanics(){
-
-}
-function varzhulMechanics(){
-    
-}
