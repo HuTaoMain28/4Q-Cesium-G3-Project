@@ -2,167 +2,251 @@ body {
     background-image: url('Images/background.png');
     background-size: cover;
     background-attachment: fixed;
-    margin: 0;
-    padding: 0;
 }
 
 h1 {
     position: absolute; 
-    top: 10%; 
-    left: 10%; 
+    top: 107px; 
+    left: 128px; 
     font-family: Aboreto;
-    font-size: 4vw; 
-    line-height: 1.2; 
+    font-size: 64px; 
+    line-height: 84px; 
     font-weight: 400; 
     color: rgb(255, 0, 0);
 }
 
 h2#username {
     position: absolute; 
-    top: 20%; 
-    left: 10%; 
-    width: 50%; 
+    top: 198px; 
+    left: 132px; 
+    width: 502px; 
     font-family: Aboreto;
-    font-size: 2.5vw; 
-    line-height: 1.4; 
+    font-size: 40px; 
+    line-height: 56px; 
     font-weight: 400; 
     color: rgb(255, 0, 0);
 }   
 
 #textbox {
     position: absolute; 
-    top: 40%; 
-    left: 10%; 
-    width: 50%; 
-    height: 5vh; 
-    padding: 0 2%; 
+    top: 404px; 
+    left: 132px; 
+    opacity: 1;
+    width: 522px; 
+    height: 52px; 
+    padding-left: 20px; 
+    padding-right: 20px; 
     font-family: Aboreto; 
-    font-size: 1.2vw; 
-    line-height: 1.5; 
+    font-size: 18px; 
+    line-height: 28px; 
     font-weight: 400; 
     background: rgb(231, 35, 35);
     border-radius: 6px;
-    border: 1px solid rgb(0, 0, 0);
+    border-width: 1px; 
+    border-color: rgb(0, 0, 0);
+    border-style: solid; 
     outline: none; 
 }
 
 #submit-name {
     position: absolute; 
-    top: 50%; 
-    left: 10%; 
-    height: 5vh; 
-    padding: 0 2%; 
+    top: 463px; 
+    left: 132px; 
+    height: 36px; 
+    padding: 0 12px; 
     display: flex; 
     align-items: center; 
     justify-content: center; 
     font-family: Aboreto; 
-    font-size: 1vw; 
-    line-height: 1.5; 
+    font-size: 14px; 
+    line-height: 22px; 
     font-weight: 400; 
     color: #FFFFFFFF;
     background: rgb(14, 0, 141);
+    opacity: 1; 
     border: none; 
     border-radius: 6px;
 }
 
-h3.story, h3.play {
+h3.story {
+    position: absolute; 
+    top: -15px; 
+    left: 10px; 
+    width: 502px; 
     font-family: Aladin; 
-    font-size: 2.5vw; 
-    line-height: 1.5; 
+    font-size: 32px; 
+    line-height: 48px; 
     font-weight: 400; 
     color: rgb(255, 0, 0);
 }
 
-p.story, p.play {
+h3.play {
+    position: absolute; 
+    top: -20px; 
+    left: 10px; 
+    width: 502px; 
     font-family: Aladin; 
-    font-size: 1.5vw; 
-    line-height: 1.8; 
+    font-size: 32px; 
+    line-height: 48px; 
+    font-weight: 400; 
+    color: rgb(255, 0, 0);
+}
+
+p.story {
+    position: absolute; 
+    top: 35px; 
+    left: 10px; 
+    width: 567px; 
+    height: 216px; 
+    font-family: Aladin; 
+    font-size: 20px; 
+    line-height: 36px; 
     font-weight: 400; 
     color: rgb(255, 0, 0); 
 }
 
-a.game-direct {
+p.play {
     position: absolute; 
-    top: 60%; 
-    left: 70%; 
-    width: 30%; 
-    font-family: Inter; 
-    font-size: 1vw; 
-    line-height: 1.6; 
-    font-weight: 500; 
-    color: #379AE6FF;
+    top: 35px; 
+    left: 10px; 
+    width: 508px; 
+    height: 216px; 
+    font-family: Aladin; 
+    font-size: 18px; 
+    line-height: 34px; 
+    font-weight: 400; 
+    color: rgb(255, 0, 0);             
 }
 
-section.story, section.gameway {
+a.game-direct {
     position: absolute; 
-    width: 40%; 
-    height: 30vh; 
+    top: 411px; 
+    left: 848px; 
+    width: 482px; 
+    font-family: Inter; /* Body */
+    font-size: 16px; 
+    line-height: 26px; 
+    font-weight: 500; 
+    color: #379AE6FF; /* info-500 */
+}
+
+section.story {
+    position: absolute; 
+    top: 516px; 
+    left: 127px; 
+    width: 584px; 
+    height: 325px; 
+    background: rgb(12, 0, 124); 
     border-radius: 10px;
     box-shadow: 0px 4px 9px #171a1f1C, 0px 0px 2px #171a1f1F;
 }
 
-section.story {
-    top: 70%; 
-    left: 10%; 
-    background: rgb(12, 0, 124); 
-}
-
 section.gameway {
-    top: 70%; 
-    left: 55%; 
+    position: absolute; 
+    top: 516px; 
+    left: 795px; 
+    width: 518px; 
+    height: 325px; 
     background: rgb(170, 0, 0); 
+    border-radius: 10px;
+    box-shadow: 0px 4px 9px #171a1f1C, 0px 0px 2px #171a1f1F;
 }
 
 section.roles {
     position: absolute;
-    top: 110%; 
-    left: 10%; 
-    width: 80%; 
-    height: 40vh; 
+    top: 906px; 
+    left: 128px; 
+    width: 1176px; 
+    height: 407px; 
     background: rgb(0, 0, 0);
     border-radius: 16px;
 }
 
-h2.roles, p.roles {
+h2.roles{
+    position: absolute; 
+    top: 90px; 
+    left: 48px; 
     font-family: Aboreto;
+    font-size: 32px; 
+    line-height: 48px; 
+    font-weight: 400; 
     color: rgb(255, 255, 255);
 }
 
-h2.roles {
-    font-size: 2.5vw; 
-    line-height: 1.5; 
+p.roles{
+    position: absolute; 
+    top: 138px; 
+    left: 48px; 
+    width: 438px; 
+    font-family: Aboreto;
+    font-size: 20px; 
+    line-height: 26px; 
+    font-weight: 400; 
+    color: rgb(255, 255, 255);
 }
 
-p.roles {
-    font-size: 1.5vw; 
-    line-height: 1.6; 
+img.bossdisplay1 {
+    position: absolute; 
+    top: 0px; 
+    left: 848px; 
+    width: 418px; 
+    height: 391px; 
+    border-radius: 0px 0px 300px 300px; 
 }
 
-img.bossdisplay1, img.logo, img.img1, img.img2, img.img3, img.img4 {
+img.logo {
+    position: absolute; 
+    top: 8px; 
+    left: 132px; 
+    width: 502px; 
+    height: 196px; 
+    border-radius: 0px; 
+}
+
+img.img1 {
+    position: absolute; 
+    top: 64px; 
+    left: 522px; 
+    width: 178px; 
+    height: 307px; 
     border-radius: 6px;
-    max-width: 100%;
-    height: auto;
 }
 
+img.img2 {
+    position: absolute; 
+    top: 24px; 
+    left: 663px; 
+    width: 178px; 
+    height: 307px; 
+    border-radius: 6px;
+}
+
+img.img3 {
+    position: absolute; 
+    top: 100px; 
+    left: 807px; 
+    width: 178px;
+    border-radius: 6px;
+}
+
+img.img4 {
+    position: absolute; 
+    top: 42px; 
+    left: 980px; 
+    width: 178px; 
+    height: 307px; 
+    border-radius: 6px;
+}
 footer.rights {
     position: relative;
     bottom: 0;
     width: 100%;
     text-align: center;
-    padding: 2vh;
+    padding: 20px;
     background: rgb(20, 0, 0);
     color: white;
     font-family: Aboreto;
 }
-
-div.forcer {
-    height: auto;
-}
-
-/* Media Queries for smaller screens */
-
-    section.story, section.gameway, section.roles {
-        width: 90%;
-        left: 5%;
-    }
+div.forcer{
+    height:1400px
 }
