@@ -6,10 +6,11 @@ var playerhealRNG = (Math.random() * 5 );
 var bossfightRNG = (Math.random() * 3 );
 var bosshealRNG = (Math.random() * 10 );
 var currentBoss;
-
+var turn;
 
 function fight(){
-    playerfightRNG-
+    
+    playerfightRNG-Boss[i];
 }
 function heal(){
 
