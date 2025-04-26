@@ -160,10 +160,6 @@ div.forcer {
 }
 
 /* Media Queries for smaller screens */
-@media (max-width: 768px) {
-    h1, h2#username, #textbox, #submit-name, h3.story, h3.play, p.story, p.play, a.game-direct, h2.roles, p.roles {
-        font-size: smaller;
-    }
 
     section.story, section.gameway, section.roles {
         width: 90%;
