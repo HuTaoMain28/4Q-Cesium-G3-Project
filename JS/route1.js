@@ -26,7 +26,7 @@ function init() {
   //Display the player's username
   const username = localStorage.getItem("username");
   document.getElementById("playerName").textContent = "Good luck " + username;
-
+} 
 //Create a story section for a boss
 function createStorySection(content, boss, index) {
   const story = document.createElement("div");
