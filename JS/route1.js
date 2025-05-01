@@ -6,7 +6,7 @@ const bossData = [
   { name: "Noctivoros, the Eclipse Devourer", description: "The Dark Lord awaits you in his castle!", image: "Images/noctivoros.png", maxHP: 40, currentHP: 40, playerHP: 20 },
 ];
 
-let score = 0; //Player's current score
+let score = 0; //current score
 
 //Initialize the game
 function init() {
@@ -23,12 +23,9 @@ function init() {
   createFightSection(content, boss, index);
   });
 
-  //Display the player's username if available
+  //Display the player's username
   const username = localStorage.getItem("username");
-  if (username) {
   document.getElementById("playerName").textContent = "Good luck " + username;
-  }
-}
 
 //Create a story section for a boss
 function createStorySection(content, boss, index) {
@@ -62,8 +59,8 @@ function createFightSection(content, boss, index) {
 
 //Start the fight for a specific boss
 function startFight(index) {
-  toggleVisibility(`story${index}`, false); //Hide the story section
-  toggleVisibility(`fight${index}`, true); //Show the fight section
+  toggleVisibility(`story${index}`, false);
+  toggleVisibility(`fight${index}`, true);
 }
 
 //Handle the attack action
@@ -86,10 +83,10 @@ function attack(index) {
 
   //Check for victory or defeat
   if (boss.playerHP === 0) {
-  disableButtons(index); //Disable buttons if the player is defeated
+  disableButtons(index);
   alert("You have fallen!");
   } else if (boss.currentHP === 0) {
-  handleVictory(index); //Handle victory if the boss is defeated
+  handleVictory(index);
   }
 }
 
@@ -97,29 +94,26 @@ function attack(index) {
 function heal(index) {
   const boss = bossData[index];
   if (boss.playerHP > 0) {
-  // Heal the player by a random amount
   boss.playerHP = Math.min(20, boss.playerHP + getRandom(1, 5));
   document.getElementById(`player${index}`).textContent = boss.playerHP;
-  } else {
-  alert("You are already defeated!");
   }
 }
 
 //Restart the fight for a specific boss
 function restart(index) {
   const boss = bossData[index];
-  boss.playerHP = 20; //Reset player's HPa
-  boss.currentHP = boss.maxHP; //Reset boss's HP
+  boss.playerHP = 20;
+  boss.currentHP = boss.maxHP;
   document.getElementById(`player${index}`).textContent = 20;
   document.getElementById(`boss${index}`).textContent = boss.maxHP;
-  enableButtons(index); //Re-enable buttons
+  enableButtons(index);
 }
 
 //Handle victory after defeating a boss
 function handleVictory(index) {
-  disableButtons(index); //Disable buttons
+  disableButtons(index);
   alert("You defeated the enemy!");
-  score++; //Increment the score
+  score++;
   document.getElementById("score").textContent = score;
 
   //Update high score if necessary
@@ -156,7 +150,7 @@ function enableButtons(index) {
   document.getElementById(`healBtn${index}`).disabled = false;
 }
 
-//Generate a random number between min and max (inclusive)
+//Generate a random number
 function getRandom(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
