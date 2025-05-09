@@ -62,7 +62,7 @@
         //Handle attack logic
         function attack(index) {
             const boss = bossData[index];
-            const bossHit = guaranteedCrit ? 10 : getRandom(1, 10); //Guaranteed critical
+            const bossHit = guaranteedCrit ? 15 : getRandom(1, 15); //Guaranteed critical
             const playerHit = getRandom(1, 5); //Random damage to player
 
             //Update HP for both player and boss
